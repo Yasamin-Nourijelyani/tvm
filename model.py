@@ -9,6 +9,9 @@ from tvm.contrib.download import download_testdata
 import torch
 import torchvision
 
+from PIL import Image
+
+
 def load_model(model_name):
     
     model = getattr(torchvision.models, model_name)(pretrained=True)
